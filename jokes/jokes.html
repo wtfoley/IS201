@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Joke Generator</title>
+    <link rel="stylesheet" href="jokes.css">
+</head>
+
+<body>
+<h1>No Arms, No Legs Joke Generator</h1>
+
+<a href="../index.html">← Back to Scratch Page</a>
+    <div class="container">
+        <h1>No Arms, No Legs Joke Generator</h1>
+        
+        <p id="joke">Click the button to get a joke!</p>
+
+        <button onclick="generateJoke()">New Joke</button>
+    </div>
+
+    <script>
+        const jokes = [
+            "What do you call a man with no arms and no legs in a pile of leaves? Russell.",
+            "What do you call a man with no arms and no legs in the water? Bob.",
+            "What do you call a man with no arms and no legs hanging on a wall? Art.",
+            "What do you call a man with no arms and no legs in front of a door? Matt.",
+            "What do you call a man with no arms and no legs in a hot tub? Stu.",
+            "What do you call a man with no arms and no legs in a mailbox? Bill.",
+            "What do you call a man with no arms and no legs being pulled by a boat? Skip.",
+            "What do you call a man with no arms and no legs in a hole? Phil.",
+            "What do you call a man with no arms and no legs in a tree? Leaf.",
+            "What do you call a man with no arms and no legs in a ditch? Doug.",
+            "What do you call a man with no arms and no legs under a car? Jack.",
+            "What do you call a man with no arms and no legs in a pool? Wade.",
+            "What do you call a man with no arms and no legs on a grill? Frank.",
+            "What do you call a man with no arms and no legs in a bucket? Chuck.",
+            "What do you call a man with no arms and no legs in a garden? Herb.",
+            "What do you call a man with no arms and no legs on your doorstep? Matt (again... he gets around)."
+        ];
+
+        function generateJoke() {
+            const randomIndex = Math.floor(Math.random() * jokes.length);
+            document.getElementById("joke").innerText = jokes[randomIndex];
+        }
+    </script>
+
+</body>
+</html>
